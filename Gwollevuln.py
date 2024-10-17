@@ -16,7 +16,7 @@ def def_handler(sig, frame):
 signal.signal(signal.SIGINT, def_handler)
 
 #Tool description
-parser = argparse.ArgumentParser(description='Verifies if the wordpress page is vulnerable to RCE and in case you want Can exploit for you')
+parser = argparse.ArgumentParser(description='Verifies if the wordpress page is vulnerable to RCE and in case you want can exploit for you')
 
 #Arguments
 parser.add_argument('-u', '--url', type=str, help='Introduce the wordpress page url')
