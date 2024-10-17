@@ -38,7 +38,6 @@ def vuln_detect():
     #we verify if on the page it is the gwolle plugin
     if (response.status_code != 200):
         print("\n[+] No version of plugin Gwolle detected on " + main_url)
-        sys.exit(0)
     else:
         print(f"\n[+] Plugin Gwolle was found, {main_url} could possibly be vulnerable to RFI, will be if the version of it is 1.5.3")
         
